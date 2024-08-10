@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #4c166b, #e51fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 400px; /* Reducido el ancho máximo */
+      width: 100%;
+      text-align: center;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .input-container {
+      position: relative;
+      margin-bottom: 20px; 
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%; 
+      padding: 15px;
+      padding-right: 40px;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: transparent;
+      color: #fff;
+      font-size: 16px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+      color: rgba(255, 255, 255, 0.7); /* Color placeholder claro */
+    }
+
+    .input-container i {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.7); /* Color icono claro */
+      font-size: 18px;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px 0;
+      color: #d5c4d9;
+    }
+
+    .remember-me input[type="checkbox"] {
+      margin: 0 10px 0 0;
+      accent-color: #C576E0;
+    }
+
+    .forgot-password a {
+      color: #d5c4d9;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    button {
+      background-image:(to bottom, #adadad, #ffffff);
+      color: rgb(0, 0, 0);
+      padding: 16px 20px;
+      margin: 20px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-image: linear-gradient(to bottom, #6d2494, #8934ba);
+      color: rgb(255, 255, 255);
+    }
+
+    .register {
+      margin-top: 20px;
+      color: #d5c4d9;
+    }
+
+    .register a {
+      color: #C576E0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <div class="input-container">
+        <input type="text" placeholder="Username" required>
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="input-container">
+        <input type="password" placeholder="Password" required>
+        <i class="fa fa-lock"></i>
+      </div>
+      <div class="remember-me">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <div class="forgot-password">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+      <button type="submit">Login</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
