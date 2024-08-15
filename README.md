@@ -66,7 +66,7 @@ El código HTML generado incluye CSS en línea para un estilo visual similar al 
 ---
 
 <div align="center">
-  <p>Creado con ❤️ por <a href="https://github.com/tu-usuario-de-github" target="_blank">Johan Morales</a></p>
+  <p>Creado con ❤️ por <a href="https://github.com/JohanMorales211" target="_blank">Johan Morales</a></p>
   <img src="https://media.giphy.com/media/SWoSkN6DxTszq/giphy.gif" width="200" alt="Animación de código">
 </div>
 
