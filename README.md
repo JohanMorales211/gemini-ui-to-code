@@ -1,27 +1,71 @@
 # Gemini UI to Code Streamlit App
 
-This Streamlit app is designed to convert UI designs into code using the power of AI. It analyzes uploaded images of UI designs and generates corresponding HTML code, making it easier for developers to bring their designs to life.
+**Convierte tus diseños UI en código HTML funcional con la potencia de la IA de Google Gemini!**
 
-## Installation
+Esta aplicación Streamlit, impulsada por la avanzada tecnología de Google Gemini, te permite transformar imágenes de diseños de interfaz de usuario en código HTML limpio y eficiente. Olvídate de la tediosa tarea de traducir manualmente tus diseños a código, ¡deja que la IA haga el trabajo pesado por ti!
 
-To install the necessary dependencies, run the following command:
+![Imagen de Google Gemini](https://zenuradio.com/wp-content/uploads/2024/05/Gemini-scaled-1.jpg)
 
-```
+## Características Clave
+
+* **Conversión Inteligente:** Analiza imágenes de diseños UI y genera el código HTML correspondiente.
+* **Personalización:** Selecciona el modelo Gemini que mejor se adapte a tus necesidades.
+* **Soporte para Frameworks CSS:**  Indica a Gemini que utilice el framework CSS de tu preferencia (ej. Tailwind, Bootstrap).
+* **Descripción Detallada:** Obtiene una descripción completa de la UI, incluyendo nombres de elementos,  cuadros delimitadores y colores.
+* **Refinamiento Inteligente:** Gemini refina la descripción y el código HTML generado para una mayor precisión y  fidelidad al diseño original.
+* **Adaptabilidad:** Genera código HTML adaptable y optimizado para dispositivos móviles.
+* **Descarga Sencilla:** Descarga el código HTML generado con un solo clic.
+
+## Instalación
+
+Para instalar las dependencias necesarias, ejecuta el siguiente comando:
+
+```bash
 pip install -r requirements.txt
-
 ```
 
-## Running the App
+## Ejecutando la Aplicación
 
-To run the app, use the following command:
+Para ejecutar la aplicación, utiliza el siguiente comando:
 
-```
+```bash
 python -m streamlit run app.py
-
 ```
 
-## Configuration
+## Configuración
 
-Before running the app, you need to configure your API key in the `app.py` file. Replace `YOUR GEMINI KEY` with your actual API key to enable the AI functionalities.
+Antes de ejecutar la aplicación, necesitas configurar tu clave API en el archivo `app.py`. Reemplaza `YOUR GEMINI KEY` con tu clave API real para habilitar las funcionalidades de la IA.
 
-You can also select the Gemini model you want and even tell Gemini to use a specific CSS framework.
+También puedes seleccionar el modelo Gemini que deseas utilizar e incluso indicarle a Gemini que utilice un framework CSS específico.
+
+
+## Cómo Funciona
+
+1. **Sube tu Imagen:**  Selecciona la imagen de tu diseño UI que deseas convertir a código.
+2. **Generar Código:** Haz clic en el botón "Code UI".  La IA analizará la imagen y generará una descripción detallada de la interfaz, seguida del código HTML.
+3. **Refinamiento Automático:** La IA  refinará la descripción y el código HTML para una mayor precisión.
+4. **Descarga tu HTML:** Descarga el código HTML final, listo para ser utilizado en tu proyecto.
+
+## Dependencias
+
+* **Streamlit:**  Framework para crear aplicaciones web interactivas para Machine Learning y Data Science.
+* **Pillow (PIL):**  Librería para procesamiento de imágenes.
+* **google-generativeai:** Librería para acceder a la API de Google Gemini.
+
+## Ejemplo de Código HTML Generado
+
+El código HTML generado incluye CSS en línea para un estilo visual similar al diseño original. Aquí tienes un ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+... (Código HTML completo) ...
+</html>
+```
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes alguna sugerencia o mejora, no dudes en crear un fork del repositorio y enviar un pull request.
+
+
+**¡Comienza a convertir tus diseños UI en código HTML hoy mismo!**
