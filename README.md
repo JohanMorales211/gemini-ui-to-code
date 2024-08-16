@@ -34,10 +34,18 @@ python -m streamlit run app.py
 
 ## Configuración ⚙️
 
-Antes de ejecutar la aplicación, necesitas configurar tu clave API en el archivo `app.py`. Reemplaza `YOUR GEMINI KEY` con tu clave API real para habilitar las funcionalidades de la IA.
+Antes de ejecutar la aplicación, necesitas configurar tu clave API de Google Gemini en el archivo `app.py`. 
+
+1. **Crea un archivo `.env`** en la misma carpeta que `app.py`.
+2. **Agrega la siguiente línea al archivo `.env`**:
+
+   ```
+   API_KEY=tu_clave_api_de_google
+   ```
+
+   Reemplaza `tu_clave_api_de_google` con tu clave API real.
 
 También puedes seleccionar el modelo Gemini que deseas utilizar e incluso indicarle a Gemini que utilice un framework CSS específico.
-
 
 ## Cómo Funciona 🔄
 
@@ -71,3 +79,4 @@ El código HTML generado incluye CSS en línea para un estilo visual similar al 
 </div>
 
 ---
+```
